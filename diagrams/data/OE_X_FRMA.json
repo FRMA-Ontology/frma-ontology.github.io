@@ -1,0 +1,2457 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/ImageOntology", "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA", "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/PersonFaceAndDemographicOntology", "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/HairOntology", "http://purl.org/net/lio", "https://w3id.org/lio/v1", "http://purl.obolibrary.org/obo", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/",
+    "labels" : {
+      "en" : "Face Recognition Model Analyzer Ontology"
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "http://tw.rpi.edu/media/latest/OE_11_FRMA.rdf",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Andrew Gaudet",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "John Angel",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Jordan Faas-Bush",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Alexander Schwartzberg",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Matthew Johnson",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "Moved Occlusion onto Image instead of person, Hair Color moved under Color, Haircut and hair texture became a subclasses of visual descriptor, Hair became a subclasses of subdivision of head. Mugshot inferencing was updted to include background and fidelity.",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "12/01/2018",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "FRMA Team",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Machine learning allows us to learn a model for a given task such as facial recognition with a high degree of accuracy. However, after these models are generated they are often treated as black boxes and the limitations of a model are often unknown to the end user. The system developed for this use case will provide an intuitive interface to explore the limits of a facial recognition model by semantically integrating \"smart\" images(semantically describe who the image depicts and what Kumar [2] features the image exhibits) with classification results to discover common causes for misclassifications.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "32",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/UBERON_0008199",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UBERON_0008199"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/NasalOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the nose",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NasalOcclusion",
+      "en" : "nasal occlusion"
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An idea or notion; a unit of thought.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concept",
+      "en" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/UBERON_0001444",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UBERON_0001444"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/UBERON_0001567",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UBERON_0001567"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#OrderedCollection",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An ordered collection of concepts, where both the grouping and the ordering are meaningful.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a 'node label'.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrderedCollection",
+      "en" : "Ordered Collection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/NeckTie",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NeckTie"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/UpperFaceOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "something that blocks a portion of the view of a persons face from the bottom of the nose to the top of the head within within an image",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UpperFaceOcclusion",
+      "en" : "upper face occlusion"
+    },
+    "subClasses" : [ "26", "31", "29", "10", "23" ],
+    "id" : "11",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "35",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/Hat",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hat"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/Makeup",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Makeup"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/CranialOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occusion of the top of the head, above the ears",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CranialOcclusion",
+      "en" : "cranial occlusion"
+    },
+    "id" : "29",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/UBERON_0001456",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UBERON_0001456"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/AuricleOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the ears",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AuricleOcclusion",
+      "en" : "auricle occlusion"
+    },
+    "id" : "23",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/UBERON_0000004",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UBERON_0000004"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/MugShotPhoto",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "an image that is posed, has good lighting, is indoors, does not have face occlusions where the subject has his eyes open",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "FRMA",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MugShotPhoto",
+      "undefined" : "mug shot photo"
+    },
+    "intersection" : [ "43" ],
+    "attributes" : [ "intersection" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "List"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/WearableObject",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WearableObject"
+    },
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/LowerFaceOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "something that blocks a portion of the view of a persons face from the bottom of the nose to the bottom of the head within within an image",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LowerFaceOcclusion",
+      "en" : "lower face occlusion"
+    },
+    "subClasses" : [ "1", "72", "73", "74", "75" ],
+    "id" : "2",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/HairOntology/Haircut",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/HairOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Haircut"
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Collection",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A meaningful collection of concepts.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Collection",
+      "en" : "Collection"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/ImageOntology/Indoors",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/ImageOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Indoors"
+    },
+    "attributes" : [ "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/PersonFaceAndDemographicOntology/VisualDescriptor",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/PersonFaceAndDemographicOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VisualDescriptor"
+    },
+    "subClasses" : [ "84", "76" ],
+    "attributes" : [ "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/FrontalOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the forehead",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FrontalOcclusion",
+      "en" : "frontal occlusion"
+    },
+    "id" : "31",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/FaceOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "something that blocks the view of a persons face within an image",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FaceOcclusion",
+      "en" : "face occlusion"
+    },
+    "subClasses" : [ "2", "11" ],
+    "id" : "33",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/Eyewear",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Eyewear"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/ImageOntology/BlurryImageFidelity",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/ImageOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BlurryImageFidelity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/HairOntology/HairColor",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/HairOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HairColor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "80" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/MentalOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the chin",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MentalOcclusion",
+      "en" : "mental occlusion"
+    },
+    "id" : "74",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/ParotidOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the angle of the jaw",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ParotidOcclusion",
+      "en" : "parotid occlusion"
+    },
+    "id" : "75",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/Earrings",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Earrings"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/UBERON_0004088",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UBERON_0004088"
+    },
+    "attributes" : [ "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/ImageOntology/PosedImage",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/ImageOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PosedImage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A set of concepts, optionally including statements about semantic relationships between those concepts.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A concept scheme may be defined to include concepts from different sources.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConceptScheme",
+      "en" : "Concept Scheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/OralOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the lips and mouth",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OralOcclusion",
+      "en" : "oral occlusion"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/UBERON_0000165",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UBERON_0000165"
+    },
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/Occlusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "something that blocks the view of a subject within an image",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Occlusion",
+      "en" : "occlusion"
+    },
+    "subClasses" : [ "33", "49" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/HairOntology/Hair",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/HairOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hair"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/PersonFaceAndDemographicOntology/Color",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/PersonFaceAndDemographicOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Color"
+    },
+    "subClasses" : [ "79" ],
+    "attributes" : [ "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/lio/v1#Image",
+    "baseIri" : "https://w3id.org/lio/v1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Image"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/Necklace",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Necklace"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/Headwear",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Headwear"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/Lipstick",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lipstick"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/CervicalOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the neck",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CervicalOcclusion",
+      "en" : "cervical occlusion"
+    },
+    "id" : "49",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/OcularOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the eyes",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OcularOcclusion",
+      "en" : "ocular occlusion"
+    },
+    "id" : "26",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/HairOntology/HairTexture",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/HairOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HairTexture"
+    },
+    "attributes" : [ "external" ],
+    "id" : "84",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/BuccalOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the cheeks",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BuccalOcclusion",
+      "en" : "buccal occlusion"
+    },
+    "id" : "72",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/ZygomaticOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "occlusion of the cheek bones",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ZygomaticOcclusion",
+      "en" : "zygomatic occlusion"
+    },
+    "id" : "73",
+    "superClasses" : [ "2" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "47",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "50",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "52",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "54",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "56",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "57",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "58",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "60",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "62",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "101",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "102",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "105",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "107",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#semanticRelation",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a concept to a concept related by meaning.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "This property should not be used directly, but as a super-property for all properties denoting a relationship of meaning between concepts.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "semanticRelation",
+      "en" : "is in semantic relation with"
+    },
+    "domain" : "4",
+    "subproperty" : [ "5", "6", "7", "8" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
+    "inverse" : "20",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a concept to a concept that is more specific in meaning.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "narrower",
+      "en" : "has narrower"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "19",
+    "subproperty" : [ "21" ],
+    "comment" : {
+      "en" : "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "11",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "11",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "11",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "11",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://purl.org/net/lio#depicts",
+    "baseIri" : "http://purl.org/net/lio",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "depicts"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#related",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a concept to a concept with which there is an associative semantic relationship.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "related",
+      "en" : "has related"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "19",
+    "subproperty" : [ "41" ],
+    "comment" : {
+      "en" : "skos:related is disjoint with skos:broaderTransitive"
+    },
+    "attributes" : [ "external", "symmetric", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOcclusionSourceOf",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "46",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is the source and/or causes of a specific occlusion on an image of a face",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOcclusionSourceOf",
+      "en" : "is the occlusion source of"
+    },
+    "domain" : "45",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOcclusionSourceOf",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "49",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is the source and/or causes of a specific occlusion on an image of a face",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOcclusionSourceOf",
+      "en" : "is the occlusion source of"
+    },
+    "domain" : "48",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/hasOcclusion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "46",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "connects an area of a subject that is not visable to the subject",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOcclusion",
+      "undefined" : "has occlusion"
+    },
+    "domain" : "51",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOcclusionSourceOf",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "1",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is the source and/or causes of a specific occlusion on an image of a face",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOcclusionSourceOf",
+      "en" : "is the occlusion source of"
+    },
+    "domain" : "53",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOcclusionSourceOf",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "29",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is the source and/or causes of a specific occlusion on an image of a face",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOcclusionSourceOf",
+      "en" : "is the occlusion source of"
+    },
+    "domain" : "36",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOcclusionSourceOf",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "49",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is the source and/or causes of a specific occlusion on an image of a face",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOcclusionSourceOf",
+      "en" : "is the occlusion source of"
+    },
+    "domain" : "17",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOcclusionSourceOf",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "33",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is the source and/or causes of a specific occlusion on an image of a face",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOcclusionSourceOf",
+      "en" : "is the occlusion source of"
+    },
+    "domain" : "37",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOccludingBodyRegion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "59",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "to be a cover, block, or hamper to the visual representation of a body region in an image",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOccludingBodyRegion",
+      "en" : "is occluding the region of"
+    },
+    "domain" : "1",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOcclusionSourceOf",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "26",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is the source and/or causes of a specific occlusion on an image of a face",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOcclusionSourceOf",
+      "en" : "is the occlusion source of"
+    },
+    "domain" : "61",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOcclusionSourceOf",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "23",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is the source and/or causes of a specific occlusion on an image of a face",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOcclusionSourceOf",
+      "en" : "is the occlusion source of"
+    },
+    "domain" : "63",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/lio/v1#hasDepictedBackground",
+    "baseIri" : "https://w3id.org/lio/v1",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasDepictedBackground"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "66",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a resource (for example a concept) to a concept scheme in which it is included.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A concept may be a member of more than one concept scheme.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inScheme",
+      "en" : "is in scheme"
+    },
+    "domain" : "35",
+    "subproperty" : [ "67" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/ImageOntology/fidelityDescribedBy",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/ImageOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "fidelityDescribedBy"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "closeMatch",
+      "en" : "has close match"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "19",
+    "subproperty" : [ "70" ],
+    "attributes" : [ "external", "symmetric", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+    "inverse" : "67",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTopConcept",
+      "en" : "has top concept"
+    },
+    "domain" : "66",
+    "attributes" : [ "external", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "80",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "46",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "46",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "exactMatch",
+      "en" : "has exact match"
+    },
+    "superproperty" : [ "69" ],
+    "domain" : "19",
+    "comment" : {
+      "en" : "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch."
+    },
+    "attributes" : [ "external", "symmetric", "object", "transitive" ],
+    "id" : "70"
+  }, {
+    "range" : "33",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "77",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "33",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "77",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "2",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "2",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "2",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "2",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broadMatch",
+    "inverse" : "21",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "broadMatch",
+      "en" : "has broader match"
+    },
+    "superproperty" : [ "20", "8" ],
+    "domain" : "19",
+    "attributes" : [ "external", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+    "inverse" : "5",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "skos:broaderTransitive is a transitive superproperty of skos:broader.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "broaderTransitive",
+      "en" : "has broader transitive"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "19",
+    "subproperty" : [ "20" ],
+    "attributes" : [ "external", "object", "transitive" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broader",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a concept to a concept that is more general in meaning.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "broader",
+      "en" : "has broader"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "19",
+    "subproperty" : [ "95" ],
+    "comment" : {
+      "en" : "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#notation",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "34",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:notation is used with a typed literal in the object position of the triple.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "notation",
+      "en" : "notation"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#mappingRelation",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mappingRelation",
+      "en" : "is in mapping relation with"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "19",
+    "subproperty" : [ "69", "41", "21", "95" ],
+    "comment" : {
+      "en" : "These concept mapping relations mirror semantic relations, and the data model defined below is similar (with the exception of skos:exactMatch) to the data model defined for semantic relations. A distinct vocabulary is provided for concept mapping relations, to provide a convenient way to differentiate links within a concept scheme from links between concept schemes. However, this pattern of usage is not a formal requirement of the SKOS data model, and relies on informal definitions of best practice."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology/isWearing",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/WearableThingsOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isWearing"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "66",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "4",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOccludingBodyRegion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "14",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "to be a cover, block, or hamper to the visual representation of a body region in an image",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOccludingBodyRegion",
+      "en" : "is occluding the region of"
+    },
+    "domain" : "72",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "49",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOccludingBodyRegion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "38",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "to be a cover, block, or hamper to the visual representation of a body region in an image",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOccludingBodyRegion",
+      "en" : "is occluding the region of"
+    },
+    "domain" : "33",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOccludingBodyRegion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "9",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "to be a cover, block, or hamper to the visual representation of a body region in an image",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOccludingBodyRegion",
+      "en" : "is occluding the region of"
+    },
+    "domain" : "74",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOccludingBodyRegion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "40",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "to be a cover, block, or hamper to the visual representation of a body region in an image",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOccludingBodyRegion",
+      "en" : "is occluding the region of"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA/isOccludingBodyRegion",
+    "baseIri" : "https://tw.rpi.edu/web/Courses/Ontologies/2018/FRMA/FRMA",
+    "range" : "96",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "to be a cover, block, or hamper to the visual representation of a body region in an image",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "G. B. Huang, M. Mattar, T. Berg, and E. Learned-Miller, \"Labeled faces in the wild: A database for studying face recognition in unconstrained environments,\" in Workshop on faces in’Real-Life’Images: detection, alignment, and recognition, 2008.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "\"Facial Region,\" The Free Dictionary. [Online]. Available: https://medical-dictionary.thefreedictionary.com/facial region. [Accessed: 03-Nov-2018].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isOccludingBodyRegion",
+      "en" : "is occluding the region of"
+    },
+    "domain" : "26",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#relatedMatch",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "relatedMatch",
+      "en" : "has related match"
+    },
+    "superproperty" : [ "7", "8" ],
+    "domain" : "19",
+    "attributes" : [ "external", "symmetric", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000051",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "BFO_0000051"
+    },
+    "domain" : "38",
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "66",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a concept to the concept scheme that it is a top level concept of.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "topConceptOf",
+      "en" : "is top concept in scheme"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrowMatch",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "narrowMatch",
+      "en" : "has narrower match"
+    },
+    "superproperty" : [ "18", "8" ],
+    "domain" : "19",
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "skos:narrowerTransitive is a transitive superproperty of skos:narrower.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "narrowerTransitive",
+      "en" : "has narrower transitive"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "19",
+    "subproperty" : [ "18" ],
+    "attributes" : [ "external", "object", "transitive" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#memberList",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "55",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates an ordered collection to the RDF list containing its members.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "memberList",
+      "en" : "has member list"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "For any resource, every item in the list given as the value of the\n      skos:memberList property is also a value of the skos:member property."
+    },
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#member",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2004/02/skos/core",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates a collection to one of its members.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "member",
+      "en" : "has member"
+    },
+    "domain" : "16",
+    "attributes" : [ "external", "object" ],
+    "id" : "111"
+  } ]
+}
